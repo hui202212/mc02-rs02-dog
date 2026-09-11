@@ -1,5 +1,7 @@
 # 简单版并联五连杆机器狗
 
+本文中的固件路径均相对于 `2.Software/DM02/`，用于快速定位对应源码和配置文件。
+
 这版只实现一条容易追踪的控制链：
 
 ```text
@@ -30,7 +32,7 @@
 | `System/Runtime/task/motor_task.cpp/.h`                      | 初始化 8 电机、保存反馈/命令、掉线/过温保护、定时发送 | 单电机标定时只改 `.h` 的 4 个标定宏 |
 | `Platform/Drivers/motor_lz/motor_LZ.cpp/.h`              | 灵足电机 CAN 协议打包和解包              | 电机型号或协议变化才改            |
 | `Platform/Drivers/remote_control/remote_control.cpp/.h` | 读取 PS2 手柄并生成摇杆/按键数据           | 手柄型号或按键协议变化才改          |
-| `Platform/Bsp/CAN/bsp_fdcan.cpp/.h`                    | STM32 FDCAN 收发回调和底层接口         | CAN 外设或过滤器变化才改         |
+| `Platform/Bsp/Can/bsp_fdcan.cpp/.h`                    | STM32 FDCAN 收发回调和底层接口         | CAN 外设或过滤器变化才改         |
 
 ### 第三层：CubeMX/芯片生成文件，入门阶段不看
 
