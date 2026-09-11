@@ -1,0 +1,45 @@
+# IDE state and local-only files
+.idea/
+.vscode/
+*.user
+*.suo
+*.userprefs
+
+# Keil user state and generated build products
+MDK-ARM/*.uvguix*
+MDK-ARM/*.uvoptx
+MDK-ARM/*_build.log
+MDK-ARM/dm02/
+MDK-ARM/*.log
+MDK-ARM/*.scvd
+MDK-ARM/.claude/
+MDK-ARM/.vscode/
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+MDK-ARM/*.lst
+
+# Compiler by-products outside the default output directory
+*.axf
+*.hex
+*.map
+*.o
+*.d
+*.dep
+*.lnp
+*.htm
+*.pyc
+__pycache__/
+
+# Local experiments, imported references, and private working material
+tmp/
+User_File/
+*.pdf
+*.docx
+*.xlsx
+*.zip
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+
+# Keep the public repository focused on source, configuration, and docs.
